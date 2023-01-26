@@ -15,26 +15,38 @@
   </head>
   <body>
     <div class="container">
-      <div class="weather-app">
-        <h1>San Francisco</h1>
-        <ul>
-          <li>Wednesday 16:00</li>
-          <li>Clear Sky</li>
-        </ul>
-        <div class="row">
-          <div class="col-6">
-            <img
-              src="https://ssl.gstatic.com/onebox/weather/48/cloudy.png"
-              alt="Cloudy"
-            />
-            <span class="temp">45°C | °F</span>
-          </div>
-          <div class="col-6">
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <div class="overview">
+            <h1>San Francisco</h1>
             <ul>
-              <li>Precipitation: 0%</li>
-              <li>Humidity: 73%</li>
-              <li>Wind: km/h</li>
+              <li>Wednesday 16:00</li>
+              <li>Windy</li>
             </ul>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <div class="d-flex weather-temperature">
+                <img
+                  class="image-windy"
+                  src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
+                  alt="Cloudy"
+                  id="icon"
+                  class="float-left"
+                />
+                <div class="float-left">
+                  <strong>45</strong
+                  ><span class="units">°C | <a href="#">°F</a></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <ul>
+                <li>Precipitation: 0%</li>
+                <li>Humidity: 73%</li>
+                <li>Wind: 12 km/h</li>
+              </ul>
+            </div>
           </div>
         </div>
         <small>
